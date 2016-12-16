@@ -1,0 +1,10 @@
+{
+  "name": "trimurtix",
+  "version": "0.0.1-alpha.1",
+  "description": "Developer tools platform",
+  "repository": "trimurtix/trimurtix",
+  "author": "Allan Alexandre",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
