@@ -9,9 +9,8 @@ export default class Workspace extends Component {
   render() {
       return (
         <div className="Workspace">
-          workspace
+          Container
         </div>
       )
   }
-
 };

@@ -18,7 +18,7 @@ global-border-box = true
 base-size-container = 80em
 
 /*
- *  1260px in font-size:16px;
+ *  1260px in font-size:16px
 */
 
 
@@ -51,11 +51,11 @@ light-opacity-color = rgba(255, 255, 255, 0.81)
 base-font-text = 'Source Sans Pro',
 Helvetica,
 Arial,
-sans-serif;
+sans-serif
 base-font-title = 'Source Sans Pro',
 Helvetica,
 Arial,
-sans-serif;
+sans-serif
 
 /*
  *  base Font size
@@ -115,7 +115,7 @@ use-base-grid = true
 
 base-spacing-unit = base-line-height
 half-spacing-unit = base-spacing-unit / 2
-line-height-ratio = base-line-height / base-font-size;
+line-height-ratio = base-line-height / base-font-size
 
 /*
  *  Social Media Colors
@@ -145,12 +145,165 @@ body, html, main, #tmx-app
 .LandingPage
   background: dark-color
   height: 100%
-  display: table;
-  width: 100%;
-  text-align: center;
+  display: table
+  width: 100%
+  text-align: center
   .logo
-    display: table-cell;
-    vertical-align: middle;
+    display: table-cell
+    vertical-align: middle
     img
-      margin: 0 auto;
+      margin: 0 auto
       max-height: 220px
+
+
+
+// Sidebar
+.sidebar.left
+  height: 100%
+  position: fixed
+  left: 0
+  width: 80px
+  background: #fff
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, .4)
+  .menu
+    .item
+      text-align: center
+      transition: all 0.2s ease-in-out
+      &:hover
+        svg
+          fill: #9A74CE
+        span
+          color: #9A74CE
+      img
+        max-width: 26px
+        display: table
+        margin: 0 auto
+      span
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 600
+        width: 100%
+        line-height: 16px
+        transition: all 0.2s ease-in-out
+        display: table
+        margin-top: 10px
+      a
+        display: block
+        padding: 15px 12px
+        color: #A7AAAE
+  .logo
+    background: #9A74CE
+    width: 80px
+    height: 80px
+    display: table
+    a
+      width: 80px
+      display: table-cell
+      vertical-align: middle
+    img
+      max-width: 58px
+      margin: 0 auto
+      display: table
+
+
+
+.sidebar.right
+  height: 100%
+  position: fixed
+  right: 0
+  z-index: 4
+  width: 240px
+  background: #fff
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, .4)
+  > .sidebar-header
+    height: 80px
+    background: #9A74CE
+    color: #fff
+    padding:15px
+
+    .sidebar-title
+      font-size:20px
+      color:#fff
+    .sidebar-subtitle
+      font-size:16px
+      font-weight:600
+    
+
+  .box-fields
+    padding:15px
+    .label
+      text-transform: uppercase
+      font-size:12px
+      color:#343C46
+
+
+
+
+.topbar
+  position: fixed
+  top: 0
+  left: 80px
+  right: 240px
+  background: transparent
+  height: 42px
+  .autosave
+    margin: 10px 20px
+    position: absolute
+    left: 0
+    img
+      float: left
+      margin-right: 5px
+      margin-top: 2px
+    span
+      font-weight: 600
+      font-size: 12px
+  .viewports
+    display: table
+    margin: 0 auto
+    >a
+      display: inline-block
+      margin: 0
+      padding: 10px 10px 9px 10px
+      cursor: pointer
+      opacity: 0.4
+      position: relative
+      border:0
+      &:hover
+        opacity: 1
+    .active
+      opacity: 1
+      &:before
+        width: 6px
+        height: 6px
+        background: #9A74CE
+        position: absolute
+        left: 20px
+        bottom: -2px
+        border-radius: 50%
+        z-index: 9
+        content: ""
+      &:after
+        width: 6px
+        height: 6px
+        position: absolute
+        left: 20px
+        bottom: -2px
+        border-radius: 50%
+        content: ""
+        box-shadow:0 -3px 10px 3px #e6d3ff
+
+
+.workspace 
+    left: 80px
+    right: 240px
+    position: fixed
+    .block 
+        width: 768px
+        min-height: 520px
+        display: table
+        position: relative
+        margin: 60px auto 0 auto
+        background: #fff
+        border: 1px solid #e5e5e5
+        padding: 15px
+    
