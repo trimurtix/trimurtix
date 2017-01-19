@@ -6,9 +6,9 @@ Package.describe({
     documentation: 'README.md'
 });
 
-// Npm.depends({
-//   "trimurtix-style-guide": "0.0.5"
-// });
+Npm.depends({
+  "style-guide-smacss": "0.1.4"
+});
 
 Package.onUse(function(api) {
     api.versionsFrom('1.3.1');
@@ -16,8 +16,7 @@ Package.onUse(function(api) {
     api.use('fourseven:scss@3.4.1');
 
     // API Variables
-    //var styles = '.npm/package/node_modules/trimurtix-style-guide/src/scss';
-    var styles = 'style-guide/src/scss';
+    var styles = '.npm/package/node_modules/style-guide-smacss/src/scss';
 
     // Styles
     api.addFiles([
@@ -35,7 +34,7 @@ Package.onUse(function(api) {
         styles + '/base/_forms.scss',
         styles + '/base/_flexbox.scss',
         styles + '/base/_media.scss',
-       
+
         // Layout
         styles + '/layout/_grid.scss',
         styles + '/layout/_toolbar.scss',

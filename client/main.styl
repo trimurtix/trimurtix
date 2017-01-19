@@ -26,12 +26,12 @@ base-size-container = 80em
  *  Base stuff
 */
 
-primary-color = #9A74CE 
-secondary-color = #FFD400 
-error-color = #ef5350 
-success-color = #2acd3f 
-assertive-color = rgb(255, 215, 92) 
-base-color = #f8f8fc 
+primary-color = #9A74CE
+secondary-color = #FFD400
+error-color = #ef5350
+success-color = #2acd3f
+assertive-color = rgb(255, 215, 92)
+base-color = #f8f8fc
 light-color = #FCFCFC
 dark-color = #343C46
 divider-color = #A6A8AC
@@ -43,6 +43,10 @@ text-color = #555
 
 dark-opacity-color = rgba(0, 0, 0, 0.81)
 light-opacity-color = rgba(255, 255, 255, 0.81)
+
+.icon
+  max-width 42px
+  max-height 42px
 
 /*
  *  Tipograpy
@@ -133,177 +137,337 @@ color-reddit = #5f99cf
 color-whatsapp = #4dc247
 
 body, html, main, #tmx-app
-  margin: 0
-  padding: 0
-  height: 100%
-  background: #f8f8fc
+  margin 0
+  padding 0
+  height 100%
+  background #f8f8fc
+  color #666
+  font-family base-font-text
 
 *:focus
-    outline: -webkit-focus-ring-color auto 5px
+    // outline -webkit-focus-ring-color auto 5px
+    outline -webkit-focus-ring-color auto 5px
 
 // Landing Page
 .LandingPage
-  background: dark-color
-  height: 100%
-  display: table
-  width: 100%
-  text-align: center
+  background dark-color
+  height 100%
+  display table
+  width 100%
+  text-align center
   .logo
-    display: table-cell
-    vertical-align: middle
+    display table-cell
+    vertical-align middle
     img
-      margin: 0 auto
-      max-height: 220px
+      margin 0 auto
+      max-height 220px
 
+.menu
+  a
+    &:hover
+      box-shadow 0 0 0 0
+      &:before
+        display none
 
+.input-field
+  box-shadow 0 1px 0 0 #e5e5e5;
+  border-radius 0
+  width 100%
+  padding 2px 8px 2px 0
+  &:hover, &:active, &:focus
+    box-shadow 0 2px 0 0 #9A74CE
+    color #9A74CE
+
+.select-field
+  &:hover
+    select
+      box-shadow 0 2px 0 0 #9A74CE
+      color #9A74CE
+    svg
+      fill #9A74CE
+  select
+    padding-left 0
+    background transparent
+    box-shadow 0 1px 0 0 #e5e5e5
+    border-radius 0
+    width 100%
+    color #666
+    font-size 14px
+    height 34px
+    min-height 34px
+    line-height 34px
+  svg
+    width 14px
+    height 14px
+    position absolute
+    right 0
+    top 14px
+  &:before
+    display none
 
 // Sidebar
 .sidebar.left
-  height: 100%
-  position: fixed
-  left: 0
-  width: 80px
-  background: #fff
-  box-shadow: 0 0 10px -3px rgba(0, 0, 0, .4)
+  height 100%
+  position fixed
+  left 0
+  width 80px
+  background #fff
+  box-shadow 0 0 10px -3px rgba(0, 0, 0, .4)
   .menu
     .item
-      text-align: center
-      transition: all 0.2s ease-in-out
-      &:hover
-        svg
-          fill: #9A74CE
-        span
-          color: #9A74CE
-      img
-        max-width: 26px
-        display: table
-        margin: 0 auto
-      span
-        text-transform: uppercase
-        font-size: 12px
-        font-weight: 600
-        width: 100%
-        line-height: 16px
-        transition: all 0.2s ease-in-out
-        display: table
-        margin-top: 10px
-      a
-        display: block
-        padding: 15px 12px
-        color: #A7AAAE
-  .logo
-    background: #9A74CE
-    width: 80px
-    height: 80px
-    display: table
+      text-align center
+    svg
+      max-width 32px
+      max-height 42px
+      display table
+      margin 0 auto
+      fill #666
+      transition all 0.2s ease-in-out
+    span
+      text-transform uppercase
+      font-size 12px
+      font-weight 600
+      width 100%
+      line-height 16px
+      transition all 0.2s ease-in-out
+      display table
+      margin-top 5px
     a
-      width: 80px
-      display: table-cell
-      vertical-align: middle
+      display block
+      padding 15px 4px
+      color #666
+      text-decoration none
+      position relative
+      transition all 0.2s ease-in-out
+      &:hover
+        opacity 1
+        background #f8f8fc
+        svg
+          transform scale(1.1,1.1)
+          fill #9a74ce
+        span
+          color #9A74CE
+
+  .logo
+    background #9A74CE
+    width 80px
+    height 80px
+    display table
+    margin 0
+    a
+      width 80px
+      display table-cell
+      vertical-align middle
     img
-      max-width: 58px
-      margin: 0 auto
-      display: table
+      max-width 58px
+      margin 0 auto
+      display table
 
 
 
 .sidebar.right
-  height: 100%
-  position: fixed
-  right: 0
-  z-index: 4
-  width: 240px
-  background: #fff
-  box-shadow: 0 0 10px -3px rgba(0, 0, 0, .4)
+  height 100%
+  position fixed
+  right 0
+  z-index 4
+  width 240px
+  background #fff
+  box-shadow 0 0 10px -3px rgba(0, 0, 0, .4)
   > .sidebar-header
-    height: 80px
-    background: #9A74CE
-    color: #fff
-    padding:15px
+    background #9A74CE
+    color #fff
+    padding 15px
 
     .sidebar-title
-      font-size:20px
-      color:#fff
+      font-size 20px
+      color #fff
+      margin-bottom 0
     .sidebar-subtitle
-      font-size:16px
-      font-weight:600
-    
+      font-size 16px
+      font-weight 600
+.collapse
+  border-radius 0
+  .collapse-item
+    margin 0
+    border-top 0
+    border-radius 0
+    border-bottom 1px solid #e5e5e5
+    &:hover
+      color #9A74CE
+      background #f8f8fc
+      svg
+        fill #9A74CE
+    input
+      &:checked ~ label
+        .icon
+          transform rotate(90deg)
+    label
+      height 34px
+      line-height 34px
+      background transparent
+      &:before
+        display none
+      svg
+        float right
+        width 14px
+        height 14px
+        position absolute
+        right 8px
+        top 10px
+// .sidebar-properties
+//   .inner-accordion
+//     padding 0 5px;
+//   li
+//     margin 0
+//     max-height 34px
+//     button
+//       padding 0 5px
+//       max-height 34px
+//       line-height 34px
+//       &:focus
+//         outline none
+//       header
+//         min-height 34px
+//         font-size 14px
+//         color #666
+//         transition all 0.2s ease-in-out
+//         &:hover
+//           background #f8f8fc
+//           color #9A74CE
+//           svg
+//             polygon
+//               fill #9A74CE
+//               stroke #9A74CE
+//       svg
+//         width 8px
+//         height 8px
+//         margin 0 5px
+//         polygon
+//           fill #666
+//           stroke #666
+//   .label
+//     color #282d37
+//     font-size 12px
+//     text-transform uppercase
+//   .grommetux-accordion-panel--active
+//     header
+//       color #9A74CE
+//       svg
+//         polygon
+//           fill #9A74CE
+//           stroke #9A74CE!important
+
 
   .box-fields
-    padding:15px
+    padding 5px 10px
     .label
-      text-transform: uppercase
-      font-size:12px
-      color:#343C46
+      text-transform uppercase
+      font-size 12px
+      color #343C46
 
 
 
 
 .topbar
-  position: fixed
-  top: 0
-  left: 80px
-  right: 240px
-  background: transparent
-  height: 42px
+  position fixed
+  top 0
+  left 80px
+  right 240px
+  background transparent
+  height 42px
   .autosave
-    margin: 10px 20px
-    position: absolute
-    left: 0
+    margin 10px 20px
+    position absolute
+    left 0
     img
-      float: left
-      margin-right: 5px
-      margin-top: 2px
+      float left
+      margin-right 5px
+      margin-top 2px
     span
-      font-weight: 600
-      font-size: 12px
+      font-weight 600
+      font-size 12px
   .viewports
-    display: table
-    margin: 0 auto
+    display table
+    margin 0 auto
     >a
-      display: inline-block
-      margin: 0
-      padding: 10px 10px 9px 10px
-      cursor: pointer
-      opacity: 0.4
-      position: relative
-      border:0
+      display inline-block
+      margin 0
+      padding 10px 10px 9px 10px
+      cursor pointer
+      opacity 0.4
+      position relative
+      border 0
+      svg
+        max-height 22px
       &:hover
-        opacity: 1
+        opacity 1
+        svg
+          transform scale(1.1,1.1)
+          fill #9a74ce
+    .nootbook
+      svg
+        max-height 32px
+        margin-bottom -4px
     .active
-      opacity: 1
+      opacity 1
+      svg
+        fill #9A74CE
       &:before
-        width: 6px
-        height: 6px
-        background: #9A74CE
-        position: absolute
-        left: 20px
-        bottom: -2px
-        border-radius: 50%
-        z-index: 9
-        content: ""
+        width 6px
+        height 6px
+        background #9A74CE
+        position absolute
+        left 28px
+        bottom 12px
+        border-radius 50%
+        z-index 9
+        content ""
+        top auto
+        opacity 1
       &:after
-        width: 6px
-        height: 6px
-        position: absolute
-        left: 20px
-        bottom: -2px
-        border-radius: 50%
-        content: ""
-        box-shadow:0 -3px 10px 3px #e6d3ff
+        width 6px
+        height 6px
+        position absolute
+        left 28px
+        bottom 12px
+        border-radius 50%
+        content ""
+        box-shadow 0 -3px 10px 3px #e6d3ff
+
+.Project
+  height 100%
+.Workspace
+  height 100%
+  .block
+      width 768px
+      min-height 520px
+      display table
+      position relative
+      margin 60px auto 0 auto
+      background #fff
+      border 1px solid #e5e5e5
+      padding 15px
 
 
-.workspace 
-    left: 80px
-    right: 240px
-    position: fixed
-    .block 
-        width: 768px
-        min-height: 520px
-        display: table
-        position: relative
-        margin: 60px auto 0 auto
-        background: #fff
-        border: 1px solid #e5e5e5
-        padding: 15px
-    
+.box-container
+  height 100%
+
+
+
+
+// Trump
+.collapse .collapse-item input
+  position static
+  opacity 1
+  z-index:1;
+
+.collapse .collapse-item > input
+    position absolute
+    opacity 0
+    z-index -1
+
+.collapse .collapse-item input:checked ~ .collapse-content
+  max-height 100em
+  border-top 1px solid #e5e5e5
+  padding-top 10px
+  padding-bottom 15px

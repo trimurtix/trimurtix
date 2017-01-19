@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
+    "grommet": "^1.2.0",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
