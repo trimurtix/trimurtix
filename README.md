@@ -1,7 +1,7 @@
 <p align="center"><img src="https://s24.postimg.org/5m53vx3s5/logo.png" width="280" /></p>
 <p align="center"><img src="https://s29.postimg.org/db5174cqv/hindu6_5.gif" /></p>
 
-<p align="center"><a href="http://github.com/trimurtix/launcher">trimurtix.com</a></p>
+<p align="center"><a href="http://trimurtix.com">trimurtix.com</a></p>
 
 ## Bug report, suggestions and improvements
 
@@ -15,9 +15,3 @@ Trimurtix is available under MIT-License and can therefore be used in any projec
 
 - Allan Alexandre (alexandesigner@gmail.com)
 - Alisson Alexandre (alissonplus@gmail.com)
-
-
-
-
-
-
