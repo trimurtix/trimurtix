@@ -23,7 +23,7 @@ export default class Sidebar extends Component {
                 </h1>
                 <nav className="menu v-menu">
                     <div className="item">
-                        <Link to="#" title="">
+                        <Link to="pages" title="">
                             <svg className="icon">
                               <use xlinkHref="#pages" />
                             </svg>
@@ -31,7 +31,7 @@ export default class Sidebar extends Component {
                         </Link>
                     </div>
                     <div className="item">
-                        <Link to="#" title="">
+                        <Link to="templates" title="">
                             <svg className="icon">
                               <use xlinkHref="#templates" />
                             </svg>
@@ -39,7 +39,7 @@ export default class Sidebar extends Component {
                         </Link>
                     </div>
                     <div className="item">
-                        <Link to="#" title="">
+                        <Link to="files" title="">
                             <svg className="icon">
                               <use xlinkHref="#files" />
                             </svg>
@@ -47,7 +47,7 @@ export default class Sidebar extends Component {
                         </Link>
                     </div>
                     <div className="item">
-                        <Link to="#" title="">
+                        <Link to="styles" title="">
                             <svg className="icon">
                               <use xlinkHref="#styles" />
                             </svg>
@@ -55,7 +55,7 @@ export default class Sidebar extends Component {
                         </Link>
                     </div>
                     <div className="item">
-                        <Link to="#" title="">
+                        <Link to="database" title="">
                             <svg className="icon">
                               <use xlinkHref="#database" />
                             </svg>
@@ -63,7 +63,7 @@ export default class Sidebar extends Component {
                         </Link>
                     </div>
                     <div className="item">
-                        <Link to="#" title="">
+                        <Link to="settings" title="">
                             <svg className="icon">
                               <use xlinkHref="#settings" />
                             </svg>

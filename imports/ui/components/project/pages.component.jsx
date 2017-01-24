@@ -13,16 +13,17 @@ import Value from 'grommet/components/Value';
 
 import ProjectContent from './project-content.component.jsx';
 
-export default class Workspace extends Component {
+export default class Pages extends Component {
 	constructor(props) {
 		super(props);
 	}
   render() {
       return (
-        <div className="Workspace">
+        <div className="Pages">
         <App centered={false}>
           <Box pad='medium' className="box-container">
             <Frame>
+            bbb
               <ProjectContent />
             </Frame>
           </Box>

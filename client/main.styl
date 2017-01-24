@@ -162,6 +162,7 @@ body, html, main, #tmx-app
       margin 0 auto
       max-height 220px
 
+// Menu
 .menu
   a
     &:hover
@@ -169,6 +170,7 @@ body, html, main, #tmx-app
       &:before
         display none
 
+// Input Field
 .input-field
   box-shadow 0 1px 0 0 #e5e5e5;
   border-radius 0
@@ -178,6 +180,7 @@ body, html, main, #tmx-app
     box-shadow 0 2px 0 0 #9A74CE
     color #9A74CE
 
+// Select Field
 .select-field
   &:hover
     select
@@ -247,7 +250,6 @@ body, html, main, #tmx-app
           fill #9a74ce
         span
           color #9A74CE
-
   .logo
     background #9A74CE
     width 80px
@@ -263,8 +265,7 @@ body, html, main, #tmx-app
       margin 0 auto
       display table
 
-
-
+// Sidebar Right
 .sidebar.right
   height 100%
   position fixed
@@ -277,7 +278,6 @@ body, html, main, #tmx-app
     background #9A74CE
     color #fff
     padding 15px
-
     .sidebar-title
       font-size 20px
       color #fff
@@ -314,60 +314,16 @@ body, html, main, #tmx-app
         position absolute
         right 8px
         top 10px
-// .sidebar-properties
-//   .inner-accordion
-//     padding 0 5px;
-//   li
-//     margin 0
-//     max-height 34px
-//     button
-//       padding 0 5px
-//       max-height 34px
-//       line-height 34px
-//       &:focus
-//         outline none
-//       header
-//         min-height 34px
-//         font-size 14px
-//         color #666
-//         transition all 0.2s ease-in-out
-//         &:hover
-//           background #f8f8fc
-//           color #9A74CE
-//           svg
-//             polygon
-//               fill #9A74CE
-//               stroke #9A74CE
-//       svg
-//         width 8px
-//         height 8px
-//         margin 0 5px
-//         polygon
-//           fill #666
-//           stroke #666
-//   .label
-//     color #282d37
-//     font-size 12px
-//     text-transform uppercase
-//   .grommetux-accordion-panel--active
-//     header
-//       color #9A74CE
-//       svg
-//         polygon
-//           fill #9A74CE
-//           stroke #9A74CE!important
 
+// Box Fields
+.box-fields
+  padding 5px 10px
+  .label
+    text-transform uppercase
+    font-size 12px
+    color #343C46
 
-  .box-fields
-    padding 5px 10px
-    .label
-      text-transform uppercase
-      font-size 12px
-      color #343C46
-
-
-
-
+// Topbar
 .topbar
   position fixed
   top 0
@@ -379,6 +335,7 @@ body, html, main, #tmx-app
     margin 10px 20px
     position absolute
     left 0
+    display none
     img
       float left
       margin-right 5px
@@ -397,10 +354,36 @@ body, html, main, #tmx-app
       opacity 0.4
       position relative
       border 0
+      &:before
+        width 8px
+        height 8px
+        background #9A74CE
+        position absolute
+        left 27px
+        bottom 12px
+        border-radius 50%
+        z-index 9
+        content ""
+        top auto
+        opacity 1
+      &:after
+        width 8px
+        height 8px
+        position absolute
+        left 27px
+        bottom 12px
+        border-radius 50%
+        content ""
+        box-shadow 0 -3px 10px 3px #e6d3ff
+      &:before, &:after
+        opacity 0
       svg
         max-height 22px
       &:hover
         opacity 1
+        &:before, &:after
+          opacity 1
+          display block
         svg
           transform scale(1.1,1.1)
           fill #9a74ce
@@ -410,30 +393,15 @@ body, html, main, #tmx-app
         margin-bottom -4px
     .active
       opacity 1
+      &:hover
+        &:before, &:after
+          display block
       svg
         fill #9A74CE
-      &:before
-        width 6px
-        height 6px
-        background #9A74CE
-        position absolute
-        left 28px
-        bottom 12px
-        border-radius 50%
-        z-index 9
-        content ""
-        top auto
+      &:before, &:after
         opacity 1
-      &:after
-        width 6px
-        height 6px
-        position absolute
-        left 28px
-        bottom 12px
-        border-radius 50%
-        content ""
-        box-shadow 0 -3px 10px 3px #e6d3ff
 
+// Project
 .Project
   height 100%
 .Workspace
@@ -448,26 +416,37 @@ body, html, main, #tmx-app
       border 1px solid #e5e5e5
       padding 15px
 
-
+// Box Container
 .box-container
   height 100%
 
-
-
-
 // Trump
+.collapse .collapse-item label svg
+  fill #9a74Ce
+.collapse .collapse-item label
+  font-size 14px
+  text-transform uppercase
+  color #9A74CE
 .collapse .collapse-item input
   position static
   opacity 1
   z-index:1;
-
 .collapse .collapse-item > input
     position absolute
     opacity 0
     z-index -1
-
 .collapse .collapse-item input:checked ~ .collapse-content
   max-height 100em
   border-top 1px solid #e5e5e5
   padding-top 10px
   padding-bottom 15px
+
+// Workspace
+.grommetux-app
+  > .grommetux-box--pad-medium
+    padding 65px 260px 0 100px
+    iframe
+      border-radius 3px 3px 0 0
+      background #fff
+      height 100%
+      box-shadow 0 0 1px 0 #d1d1d1
