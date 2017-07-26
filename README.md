@@ -1,7 +1,4 @@
-<p align="center"><img src="https://s24.postimg.org/5m53vx3s5/logo.png" width="280" /></p>
-<p align="center"><img src="https://s29.postimg.org/db5174cqv/hindu6_5.gif" /></p>
-
-<p align="center"><a href="http://trimurtix.com">trimurtix.com</a></p>
+<p align="center"><img src="https://github.com/trimurtix/assets/blob/master/brand%402x.png" width="100%" /></p>
 
 ## Bug report, suggestions and improvements
 
