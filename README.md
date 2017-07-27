@@ -1,17 +1,14 @@
-<p align="center"><img src="https://s24.postimg.org/5m53vx3s5/logo.png" width="280" /></p>
-<p align="center"><img src="https://s29.postimg.org/db5174cqv/hindu6_5.gif" /></p>
+<p align="center"><img src="https://github.com/trimurtix/assets/blob/master/brand%402x.png" width="100%" /></p>
+> A project for designers and developers who like interface tool when building a web application
 
-<p align="center"><a href="http://trimurtix.com">trimurtix.com</a></p>
+## Versioning
 
-## Bug report, suggestions and improvements
+To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
 
-[Issues](https://github.com/trimurtix/trimurtix/issues)
+## Contributors
+
+Check the [issues](https://github.com/alexandesigner/lets/issues) that are open and if you have a new idea open an issue, you will be welcome to discuss an improvement, bug or critical
 
 ## License
 
 Trimurtix is available under MIT-License and can therefore be used in any project free of charge.
-
-## Contributors
-
-- Allan Alexandre (alexandesigner@gmail.com)
-- Alisson Alexandre (alissonplus@gmail.com)
