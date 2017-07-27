@@ -3,20 +3,8 @@
 	  <div class="sidebar-content">
 	    <header class="sidebar-content_header">
 	    	<router-link class="logo" :to="{name: 'admin-dashboard'}" exact>
-	    		<img src="/images/logo.svg" width="60" height="60" alt="" />
+	    		<img src="/images/icon.png" width="60" height="60" alt="" />
 	    	</router-link>
-	    	<div class="actions">
-	    		<span class="notifications">
-	    			<svg class="icon">
-	            <use xlink:href="#bell" />
-	          </svg>
-	    		</span>
-	    		<span class="config">
-	    			<svg class="icon">
-	            <use xlink:href="#cog" />
-	          </svg>
-	    		</span>
-	    	</div>
 	    </header>
 	    <div class="sidebar-content_nav">
     		<router-link class="nav-item" :to="{name: 'admin-dashboard'}" exact>
@@ -27,12 +15,6 @@
 	    	</router-link>
 	    	<router-link class="nav-item" :to="{name: 'admin-users'}">
 	    		Usuários
-	    		<svg class="icon">
-            <use xlink:href="#arrow-right" />
-          </svg>
-	    	</router-link>
-	    	<router-link class="nav-item" :to="{name: 'admin-products'}">
-	    		Produtos
 	    		<svg class="icon">
             <use xlink:href="#arrow-right" />
           </svg>

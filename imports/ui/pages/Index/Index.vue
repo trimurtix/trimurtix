@@ -18,6 +18,7 @@
   justify-content center
   flex-direction column
   height 100%
+  background var(--color-primary)
   img
     margin 0 auto
 </style>
