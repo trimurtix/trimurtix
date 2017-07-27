@@ -1,22 +1,70 @@
 {
-  "name": "trimurtix",
-  "version": "0.0.1-alpha.1",
+  "name": "instashopper",
+  "version": "0.1.0",
   "private": true,
-  "description": "Developer tools platform",
-  "repository": "trimurtix/trimurtix",
-  "author": "Allan Alexandre",
-  "license": "MIT",
-  "scripts": {
-    "start": "meteor run"
-  },
   "dependencies": {
-    "babel-runtime": "^6.20.0",
-    "grommet": "^1.2.0",
-    "meteor-node-stubs": "~0.2.0",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-frame-component": "^1.0.0",
-    "react-router": "^3.0.0"
+    "@cleverbeagle/seeder": "^1.1.0",
+    "babel-runtime": "^6.23.0",
+    "bcrypt": "^1.0.2",
+    "element-theme-default": "^1.3.7",
+    "element-ui": "^1.3.6",
+    "marked": "^0.3.6",
+    "meteor-node-stubs": "^0.2.0",
+    "quill": "^1.2.6",
+    "vue": "^2.3.4",
+    "vue-data-tables": "^1.1.1",
+    "vue-infinite-scroll": "^2.0.1",
+    "vue-meteor-tracker": "^1.2.3",
+    "vue-moment": "^2.0.2",
+    "vue-router": "^2.5.3",
+    "vue2-editor": "^2.0.24"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^3.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": "off",
+      "import/prefer-default-export": "off",
+      "no-underscore-dangle": "off",
+      "object-shorthand": [
+        "error",
+        "always",
+        {
+          "avoidQuotes": false
+        }
+      ],
+      "meteor/eventmap-params": [
+        "error",
+        {
+          "eventParamName": "event",
+          "templateInstanceParamName": "instance"
+        }
+      ],
+      "meteor/template-names": [
+        "off"
+      ]
+    },
+    "settings": {
+      "import/resolver": "meteor"
+    }
+  }
 }
